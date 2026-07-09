@@ -1,0 +1,9 @@
+[package]
+name = "bmpf2fnt"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "Parse Stranded II .bmpf bitmap font files and generate BMFont .fnt output"
+
+[dependencies]
+image = "0.25"
