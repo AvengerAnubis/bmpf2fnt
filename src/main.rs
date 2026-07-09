@@ -14,30 +14,9 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-//! Parse `.bmpf` bitmap font files (Stranded II / Blitz3D format) and
-//! generate `.fnt` (BMFont / AngelCode text format) output.
-//!
-//! # `.bmpf` format
-//!
-//! ```text
-//! [46-byte ASCII header]  "Unreal Software Bitmap Font Wizard bmpf File\r\n"
-//! [optional 6-byte meta]   only present in full (256-char) fonts:
-//!   u16 LE: char_count     (256)
-//!   u16 LE: font_height    (pixels)
-//!   u16 LE: unknown
-//! [3-byte records …]
-//!   u8:    character code
-//!   u16 LE: advance width
-//! [terminator]             00 00 00
-//! ```
-
-pub mod atlas;
-pub mod bmpf;
-pub mod cli;
-pub mod error;
-pub mod fnt;
-
-pub use atlas::{build_font_atlas, FontAtlas, GlyphRegion};
-pub use bmpf::{BmpfChar, BmpfFont};
-pub use error::BmpfError;
-pub use fnt::generate_bmfont;
+fn main() {
+    if let Err(e) = bmpf2fnt::cli::run() {
+        eprintln!("error: {e}");
+        std::process::exit(1);
+    }
+}
