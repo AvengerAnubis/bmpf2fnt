@@ -69,3 +69,6 @@ std::fs::write("font.fnt", &fnt)?;
 ## License
 
 GPL-3.0-or-later. See [`LICENSE`](LICENSE).
+
+Test assets in `tests/in/` are property of **Unreal Software** and are
+not covered by the GPL. See [`NOTICE`](NOTICE) for details.

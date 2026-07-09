@@ -1,0 +1,19 @@
+bmpf2fnt – NOTICE
+==================
+
+Test assets (files under tests/in/)
+------------------------------------
+
+The `.bmpf` and `.bmp` files in the `tests/in/` directory originate from
+the game *Stranded II* (also known as *Stranded 2*) and are the property of
+**Unreal Software** (https://www.unrealsoftware.de).
+
+- Game website: https://www.strandedonline.de/s2_info.php
+- Copyright holder: Unreal Software
+
+These files are included in this repository solely for testing purposes.
+They are not covered by the GPL-3.0 license that applies to the bmpf2fnt
+source code.  All rights to these assets remain with Unreal Software.
+
+If you are a copyright holder and believe that these files should not be
+distributed here, please open an issue and they will be removed promptly.
