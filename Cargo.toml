@@ -1,11 +1,11 @@
 [package]
 name = "bmpf2fnt"
-version = "0.2.2"
+version = "0.2.3"
 edition = "2024"
 license = "GPL-3.0-or-later"
 description = "Parse Stranded II .bmpf bitmap font files and generate BMFont .fnt output"
-repository = "https://github.com/AvengerAnubis/bmpf2fnt"
-homepage = "https://github.com/AvengerAnubis/bmpf2fnt"
+repository = "https://github.com/OpenStranded/bmpf2fnt"
+homepage = "https://github.com/OpenStranded/bmpf2fnt"
 documentation = "https://docs.rs/bmpf2fnt"
 readme = "README.md"
 keywords = ["stranded", "bmpf", "font", "bmfont", "openstranded"]
